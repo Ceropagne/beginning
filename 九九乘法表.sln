@@ -1,31 +1,23 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "九九乘法表", "九九乘法表\九九乘法表.vcxproj", "{4E0953D4-0077-43A6-9A94-FDD42C78A347}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Debug|x64.ActiveCfg = Debug|x64
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Debug|x64.Build.0 = Debug|x64
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Debug|x86.ActiveCfg = Debug|Win32
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Debug|x86.Build.0 = Debug|Win32
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Release|x64.ActiveCfg = Release|x64
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Release|x64.Build.0 = Release|x64
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Release|x86.ActiveCfg = Release|Win32
-		{4E0953D4-0077-43A6-9A94-FDD42C78A347}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3FB738A3-28E1-4171-8FAE-116172E93958}
-	EndGlobalSection
-EndGlobal
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	int i, j, k;
+	for (i = 1; i < 10; i++)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			k = i * j;
+			if (i <= j)
+			{
+				printf("%d*%d=%d ",i, j, k);
+			}
+			else
+			{
+				printf("%d*%d=%d ", j, i, k);
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
